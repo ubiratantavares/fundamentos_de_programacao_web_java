@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS oficina_aula3;
+
+CREATE DATABASE oficina_aula3;
+
+USE oficina_aula3;
+
+CREATE TABLE peca (
+	id INT AUTO_INCREMENT,
+	tipo VARCHAR(80) NOT NULL,
+	marca VARCHAR(80) NOT NULL,
+	quantidade INTEGER NOT NULL,
+	valor DECIMAL(10, 2) NOT NULL,
+	PRIMARY KEY(id)
+);
+
+DESC peca;
